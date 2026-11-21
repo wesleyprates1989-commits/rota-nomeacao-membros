@@ -1,0 +1,36 @@
+V5 — WEBP E PDF OTIMIZADOS
+
+- Catálogo: 150 mapas únicos, distribuídos nos 12 módulos com contagens corretas.
+- Filtros por nível, busca e trilha inicial funcionais.
+- Nome, fila, última ficha e progresso retomados; desmarcar reduz contagem sem duplicar registros.
+- Impressão individual e múltipla chamadas apenas após o carregamento/decodificação; uma ficha por contêiner de página.
+- Falha de imagem bloqueia impressão e mostra aviso, sem travamento.
+- URLs de recursos corretas em subpasta, com e sem barra final, e em arquivo local.
+- Armazenamento corrompido ou bloqueado tratado com aviso visível.
+- Inicialização protegida: catálogo indisponível produz mensagem, sem falha silenciosa.
+- InfoApp acessível pelo menu, atalho e quarto bônus; links de acesso e instalação presentes.
+- CSS de impressão, proteção hidden, fonte incorporada e ausência de dependências externas verificados.
+- App inicia com aviso de IA pendente e somente a tela inicial visível.
+- Nome e conteúdos do usuário são tratados como texto, não como HTML.
+- Preparação discursiva salva com resposta e referência, sem inventar nota.
+- Solicitar análise sem conexão de IA mostra explicação e não chama API nem cria resultado falso.
+- Roteiro guiado é gerado, identificado e salvo; o dashboard atualiza.
+- Cronômetro inicia, pausa, retoma e indica ultrapassagem de sete minutos.
+- Nova inicialização recupera rascunhos, histórico, nome e tempo pausado.
+- Instalação em arquivo local apresenta instrução útil, em vez de um botão sem ação.
+- Apagar histórico exige confirmação e preserva os rascunhos.
+- Entrada de instalação pela área de membros abre orientação com botão Instalar agora.
+- Instalação prepara o HTML, configuração, manifesto e ícones para acesso offline.
+- Atualização remove somente caches antigos deste app.
+- Navegação offline usa o HTML já armazenado.
+- Configuração busca a versão online para evitar conexão de IA presa em cache antigo.
+- Solicitações e resultados de IA não são interceptados pelo cache.
+- A atualização pode ser ativada pelo botão do app.
+
+315 JPGs convertidos em WebP, com dimensões preservadas e decodificação conferida.
+15 PDFs otimizados; páginas, dimensões e texto extraível comparados com a V4.
+Todos os PDFs renderizados em baixa resolução para detectar falhas de abertura.
+Amostras de mapas e PDFs inspecionadas visualmente.
+Links locais, catálogo e integridade do ZIP conferidos.
+Testes de interface em DOM simulado; publicação real ainda não validada.
+Não foi confirmada a causa dos erros desconhecidos de upload da Cloudflare.

@@ -1,0 +1,21 @@
+ROTA DA NOMEAÇÃO — ÁREA COMPLETA V5 OTIMIZADA
+
+PUBLICAR NO CLOUDFLARE PAGES
+1. Use uma nova implantação no projeto Pages.
+2. Clique em Remover tudo na seleção de arquivos anterior.
+3. Envie ESTE ZIP diretamente, sem extrair e sem colocar dentro de outra pasta.
+4. Aguarde todos os arquivos terminarem de carregar.
+5. Só publique quando não houver erros ou arquivos pendentes.
+
+O index.html está diretamente na raiz do ZIP. Não envie uma pasta extra
+chamada AREA DE MEMBROS acima do conteúdo do site.
+
+Se aparecer erro desconhecido de upload, não publique incompleto.
+O erro pode depender da conexão ou do envio pelo navegador: a otimização
+reduz o peso, mas não garante a correção de uma falha da plataforma.
+
+Imagens JPG convertidas para WebP, mantendo dimensões.
+PDFs otimizados, mantendo páginas, dimensões e texto extraível.
+Não foram adicionados, removidos ou reescritos temas do material.
+InfoApp e simulado continuam incluídos. IA do assistente não conectada.
+O progresso permanece salvo naquele navegador.
