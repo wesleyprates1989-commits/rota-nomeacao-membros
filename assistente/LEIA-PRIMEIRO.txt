@@ -1,0 +1,67 @@
+INFOAPP INTEGRADO À ÁREA DE MEMBROS
+
+Não precisa publicar esta pasta separadamente. Ela já está no pacote completo.
+Acesso: endereço-da-área/assistente/app.html
+
+ROTA DA NOMEAÇÃO — BÔNUS 04 — ASSISTENTE DE TREINO V1
+
+PRONTO PARA TESTAR
+1. Extraia o ZIP.
+2. Abra app.html para testar os formulários no computador.
+3. Para instalar e testar offline, publique TODOS os arquivos desta pasta
+   mantendo esta pasta assistente dentro do projeto da área de membros, incluindo icons, config.js,
+   sw.js e manifest.webmanifest. Não há comando de build nem instalação.
+4. Abra o endereço HTTPS no celular e toque em Instalar.
+   No Android compatível, o navegador pode abrir a instalação diretamente.
+   No iPhone, o app orienta Compartilhar > Adicionar à Tela de Início.
+   Navegadores internos de redes sociais podem exigir abrir no navegador.
+
+FUNCIONA NESTA VERSÃO
+- Perfil com nome e dashboard.
+- Preparação discursiva com enunciado, disciplina, referência e resposta.
+- Foto pela câmera ou seleção de JPG, PNG ou WebP até 10 MB.
+- Prévia da foto e campo de transcrição manual.
+- Autoavaliação e salvamento da preparação, sem nota automática.
+- Roteiro guiado baseado no conteúdo informado pelo próprio professor.
+- Distribuição do ensaio em 5, 6 ou 7 minutos e estimativa por palavras.
+- Cronômetro com pausa, retomada e indicação da faixa de 5 a 7 minutos.
+- Histórico, filtros, reabertura dos campos, cópia, TXT e impressão/PDF A4.
+- Rascunhos e histórico salvos no navegador.
+- Exclusão de treino e histórico com confirmação.
+- Instalação como web app, quando suportada pelo navegador.
+- Acesso local/offline à estrutura após o primeiro carregamento bem-sucedido
+  em HTTPS e o armazenamento dos arquivos do app.
+
+AINDA NÃO ESTÁ CONECTADO
+O serviço de IA. Por isso, a leitura automática de fotos, a correção comentada,
+a nota estimada e a geração de conteúdo personalizado não são executadas.
+Os botões correspondentes mostram uma explicação; não simulam um resultado.
+O roteiro guiado é uma organização dos textos inseridos, não análise de IA.
+O conteúdo pedagógico e as referências precisam ser conferidos pelo professor.
+
+PRÓXIMA ETAPA
+Conectar um serviço de IA por uma função segura no servidor da Cloudflare.
+Não coloque chave privada de IA em config.js, HTML ou qualquer arquivo público.
+Veja CONEXAO-IA.txt para o contrato de dados já preparado.
+Limite de três gerações por dia, cobrança extra, login e controle de créditos
+NÃO estão ativos. Serão discutidos depois da validação, conforme combinado.
+
+DADOS E PRIVACIDADE
+Não há login, banco de dados remoto, pagamentos ou transmissão de treinos
+ao servidor nesta versão sem IA conectada.
+O histórico e os rascunhos ficam no mesmo navegador e endereço de acesso.
+Trocar de aparelho, usar aba anônima, limpar os dados ou mudar de domínio
+pode separar ou apagar os registros. Exporte os textos que deseja guardar.
+Fotos ficam apenas na sessão e não são gravadas no histórico.
+O cronômetro volta pausado no tempo salvo quando o app é reaberto.
+
+CONFERÊNCIA NO CELULAR DEPOIS DE PUBLICAR
+Confira Instalar, navegação inferior, foto, campos, teclado, roteiro,
+cronômetro, histórico após fechar/reabrir e uso em modo avião.
+No iPhone, a opção de PDF pode aparecer dentro das ações de compartilhar
+ou imprimir do sistema. Os nomes variam com navegador e versão.
+
+REFERÊNCIA
+Edital de Abertura 01/2026 da SEDUC-SP:
+https://conhecimento.fgv.br/concursos/concursoseducsp27
+As orientações resumidas do app não substituem o edital e suas retificações.

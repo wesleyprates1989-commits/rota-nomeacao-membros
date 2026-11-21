@@ -1,0 +1,32 @@
+VALIDAÇÃO DO ASSISTENTE V1
+
+- Contagem de palavras e cronômetro com limites e arredondamento.
+- Roteiro de seis minutos usa informações fornecidas e se identifica como modelo guiado.
+- Distribuição de 5, 6 e 7 minutos e validação de conteúdo obrigatório.
+- Respostas de IA incompletas ou notas fora da escala são rejeitadas; nenhuma nota é criada como fallback.
+- Exportação conserva texto, fonte e identificação do tipo de treino.
+- App inicia com aviso de IA pendente e somente a tela inicial visível.
+- Nome e conteúdos do usuário são tratados como texto, não como HTML.
+- Preparação discursiva salva com resposta e referência, sem inventar nota.
+- Solicitar análise sem conexão de IA mostra explicação e não chama API nem cria resultado falso.
+- Roteiro guiado é gerado, identificado e salvo; o dashboard atualiza.
+- Cronômetro inicia, pausa, retoma e indica ultrapassagem de sete minutos.
+- Nova inicialização recupera rascunhos, histórico, nome e tempo pausado.
+- Instalação em arquivo local apresenta instrução útil, em vez de um botão sem ação.
+- Apagar histórico exige confirmação e preserva os rascunhos.
+- Instalação prepara o HTML, configuração, manifesto e ícones para acesso offline.
+- Atualização remove somente caches antigos deste app.
+- Navegação offline usa o HTML já armazenado.
+- Configuração busca a versão online para evitar conexão de IA presa em cache antigo.
+- Solicitações e resultados de IA não são interceptados pelo cache.
+- A atualização pode ser ativada pelo botão do app.
+- HTML balanceado e IDs únicos.
+- Rótulos associados aos campos existentes.
+- Arquivos locais e ícones do manifesto presentes e com dimensões válidas.
+- Sem dependências externas e sem URL de IA configurada.
+
+LIMITES DA CONFERÊNCIA
+- Testes dos fluxos em DOM simulado a partir do HTML; não substituem inspeção visual.
+- Chromium não pôde iniciar neste ambiente por restrição de sockets.
+- Instalação PWA e câmera real dependem da conferência no navegador/aparelho após publicação em HTTPS.
+- Integração com provedor de IA, autenticação, cota diária e cobrança não estão incluídas nesta versão.

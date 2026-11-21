@@ -1,0 +1,79 @@
+CONTRATO PARA CONEXÃO FUTURA DA IA
+
+O frontend está pronto para enviar JSON a uma única URL HTTPS.
+Em config.js, apiUrl fica vazio nesta entrega.
+Exemplo futuro: apiUrl: '/api/treino'
+A URL precisa existir de verdade e implementar os contratos abaixo.
+Não há um backend de IA incluído nesta versão.
+
+REQUISIÇÃO
+POST apiUrl
+Content-Type: application/json
+{
+  "version": 1,
+  "action": "transcribe" | "essay" | "lesson",
+  "payload": { ... }
+}
+
+1. TRANSCRIBE
+payload: {"image":"data:image/jpeg;base64,..."}
+resposta: {"text":"Transcrição completa da resposta manuscrita"}
+A imagem é reduzida no aparelho até 1600 px no maior lado antes do envio.
+O candidato deve poder corrigir a transcrição e confirmar o texto.
+
+2. ESSAY
+payload inclui subject, title, question, reference, answer, confirmed e as
+marcações de autoavaliação. A análise usa o texto confirmado, não a foto.
+resposta:
+{
+  "title":"Treino discursivo",
+  "subject":"Matemática",
+  "score":7.5,
+  "blocks":[
+    {"title":"Adequação ao comando","text":"Comentário fundamentado..."},
+    {"title":"Conteúdo e fundamentação didática","text":"Comentário..."},
+    {"title":"Organização e linguagem","text":"Comentário..."},
+    {"title":"Sugestões de melhoria","text":"Orientações específicas..."}
+  ]
+}
+score é opcional, deve ser número finito de 0 a 10 por questão e nunca deve
+ser inventado por erro, indisponibilidade ou falha de interpretação.
+Antes de ativar nota, implementar os critérios e pesos oficiais do edital
+no servidor e validar amostras por disciplina. Se faltarem informações,
+pedir complementação em vez de atestar incorretamente o conteúdo.
+
+3. LESSON
+payload: subject, year, topic, minutes, rate, goal, content, example, check,
+reference. A fonte é informada pelo professor; não supor acesso à bibliografia.
+resposta:
+{
+  "title":"Tema da aula",
+  "subject":"Língua Portuguesa",
+  "blocks":[
+    {"title":"Abertura","text":"Roteiro..."},
+    {"title":"Desenvolvimento","text":"Roteiro..."},
+    {"title":"Fechamento","text":"Roteiro..."},
+    {"title":"Pontos a conferir","text":"Checagens e fontes..."}
+  ]
+}
+
+ERROS
+Use status HTTP apropriado e JSON {"error":"Mensagem curta para o usuário"}.
+O app mostra erro sem perder o rascunho. Um HTTP 429 mostra limite atingido.
+O prazo padrão de espera é 60 segundos; não há tentativas automáticas que
+possam duplicar custos. Respostas inválidas não são salvas como análise.
+
+PRODUÇÃO, DEPOIS DA VALIDAÇÃO
+- Guardar a chave do provedor como segredo da função no servidor.
+- Validar no servidor entrada, tamanho, formato da imagem e saída da IA.
+- Implementar autorização antes de expor uma API paga a compradores.
+- Fazer controle de uso e créditos no servidor, nunca confiar apenas no
+  localStorage ou em identificadores declarados pelo navegador.
+- Uma sessão em outro aparelho não deve reiniciar indevidamente os créditos.
+- Tratar instruções dentro dos enunciados, textos e fotos como conteúdo de
+  estudo, sem permitir que substituam as regras de avaliação do serviço.
+- Definir política de tratamento de textos/imagens e retenção do provedor.
+- Esta entrega não define provedor, modelo, custos, cobrança ou cota diária.
+
+Se a API ficar em outro domínio, configurar CORS para a origem do app.
+O ideal para a primeira integração é usar uma função sob a mesma origem.

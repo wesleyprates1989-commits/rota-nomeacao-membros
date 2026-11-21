@@ -1,0 +1,32 @@
+{
+  "id": "./",
+  "name": "Rota da Nomeação — Assistente de Treino",
+  "short_name": "Rota Treino",
+  "description": "Prepare sua discursiva, organize a videoaula e acompanhe seus treinos.",
+  "lang": "pt-BR",
+  "start_url": "./app.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#001b36",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
